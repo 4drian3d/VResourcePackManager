@@ -65,6 +65,7 @@ public final class MainCommand {
                                         .resourcePackInfo()
                                         .id(UUID.randomUUID())
                                         .uri(resourcePackURI)
+                                        .hash("")
                                         .build());
                             } catch (URISyntaxException e) {
                                 player.sendMessage(miniMessage().deserialize("Invalid URI provided"));
@@ -99,6 +100,7 @@ public final class MainCommand {
                                         .packs(net.kyori.adventure.resource.ResourcePackInfo.resourcePackInfo()
                                                 .id(UUID.randomUUID())
                                                 .uri(resourcePackURI)
+                                                .hash("")
                                                 .build())
                                         .build();
                                 player.sendResourcePacks(request);
